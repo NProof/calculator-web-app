@@ -13,8 +13,13 @@ document.addEventListener("keydown", function(e) {
   let code = e.code;
   // alert(`{ ${code}, ${key}, ${keyCode}, ${char}}`);
   if (code === "Enter" || (code === "Equal" && !e.shiftKey)) {
-    let result = math.evaluate(expression);
-    alert(result);
+    try {
+				let result = math.evaluate(expression);
+    		alert(result);
+			}
+			catch(e) {
+				alert(expression.concat(" is invalid."));
+			}
     expression = "";
   } else if (code === "ShiftLeft" || code === "ShiftRight") {
   } else if (code === "Backspace") {
