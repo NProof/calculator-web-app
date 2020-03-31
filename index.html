@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html>
-	<head>
-    <script type="text/javascript">
-      'use strict';
-    </script>
-		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.1/math.min.js"></script>
-    <title> Calculator </title>
-		<link href="style.css" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minmum-scale=1">
-	</head>
-	<body>
-		<div id="display"></div>
-		<div id="control">
-			<botton>+</botton>
-			<botton>*</botton>
-			<botton>=</botton>
-		</div>
-		<script src="script.js"></script>
-	</body>
+
+    <head>
+        <script type="text/javascript">
+            'use strict';
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [
+                        ['$', '$'],
+                        ['\\(', '\\)']
+                    ]
+                }
+            };
+
+        </script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.1/math.min.js"></script>
+        <title> Calculator </title>
+        <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    </head>
+
+    <body>
+        <div id="display">
+            <p> this is p. </p>
+        </div>
+        <div id="control">
+            <botton>sin</botton>
+            <botton>cos</botton>
+            <botton>tan</botton>
+            <botton>=</botton>
+            <botton>+</botton>
+            <botton>-</botton>
+            <botton>*</botton>
+            <botton>/</botton>
+            <botton>0</botton>
+            <botton>1</botton>
+            <botton>2</botton>
+            <botton>3</botton>
+            <botton>4</botton>
+            <botton>5</botton>
+            <botton>6</botton>
+            <botton>7</botton>
+            <botton>8</botton>
+            <botton>9</botton>
+            <botton>A</botton>
+            <botton>B</botton>
+            <botton>C</botton>
+            <botton>D</botton>
+            <botton>E</botton>
+            <botton>F</botton>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
 </html>
